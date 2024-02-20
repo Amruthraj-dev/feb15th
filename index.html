@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @media screen and (min-width: 0px) and (max-width: 400px) 
+      {
+        .fb1 {
+          visibility: hidden;
+        }
+        .fb2 {
+          visibility: hidden;
+        }
+
+        body {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .fb {
+          height: 300px;
+          width: 300px;
+          background-color: orange;
+          border: 1px solid black;
+          display: grid;
+          gap: 10px;
+          padding: 20px;
+        }
+        .cf {
+          display: grid;
+          background-color: green;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+      @media screen and (min-width: 400px) and (max-width: 800px) {
+        .fb1 {
+          height: 340px;
+          width: 500px;
+          background-color: white;
+          border: 1px solid black;
+          display: grid;
+          gap: 10px;
+          padding: 20px;
+        }
+        .fb {
+          visibility: hidden;
+        }
+        .fb2 {
+          visibility: hidden;
+        }
+        .cfa {
+          display: grid;
+          background-color: red;
+          justify-content: center;
+        }
+        .cf11 {
+          grid-row-start: 1;
+          grid-row-end: 6;
+
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+        }
+        .cf21 {
+          grid-column-start: 2;
+          grid-column-end: 6;
+        }
+        .cf31 {
+          grid-row-start: 2;
+          grid-row-end: 6;
+        }
+        .cf41 {
+          grid-row-start: 2;
+          grid-row-end: 6;
+        }
+        .cf51 {
+          grid-row-start: 2;
+          grid-row-end: 6;
+        }
+        .cf61 {
+          grid-row-start: 2;
+          grid-row-end: 6;
+        }
+
+        body {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: white;
+        }
+      }
+      @media screen and (min-width: 800px) and (max-width: 1200px) {
+        .fb1 {
+          visibility: hidden;
+        }
+        .fb {
+          visibility: hidden;
+        }
+
+        .fb2 {
+          height: 300px;
+          width: 800px;
+          background-color: rgb(35, 111, 243);
+          border: 1px solid black;
+          display: grid;
+
+          gap: 10px;
+          padding: 10px;
+        }
+        .cfb {
+          display: grid;
+          background-color: rgb(160, 218, 243);
+          justify-content: center;
+          align-items: center;
+        }
+        .cf12 {
+          grid-column-start: 1;
+          grid-column-end: 7;
+        }
+        .cf22 {
+          grid-row-start: 2;
+          grid-row-end: 4;
+        }
+        .cf32 {
+          grid-row-start: 2;
+          grid-row-end: 3;
+          grid-column-start: 5;
+          grid-column-end: 7;
+        }
+        .cf42 {
+          grid-column-start: 2;
+          grid-column-end: 5;
+        }
+        .cf52 {
+          grid-column-start: 2;
+          grid-column-end: 7;
+        }
+
+        body {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="fb">
+      <div class="cf cf1">one</div>
+      <div class="cf cf2">two</div>
+      <div class="cf cf3">three</div>
+      <div class="cf cf4">four</div>
+      <div class="cf cf5">five</div>
+      <div class="cf cf6">six</div>
+    </div>
+
+    <div class="fb1">
+      <div class="cfa cf11">one</div>
+      <div class="cfa cf21">two</div>
+      <div class="cfa cf31">three</div>
+      <div class="cfa cf41">four</div>
+      <div class="cfa cf51">five</div>
+      <div class="cfa cf61">six</div>
+    </div>
+
+    <div class="fb2">
+      <div class="cfb cf12">header</div>
+      <div class="cfb cf22">main</div>
+      <div class="cfb cf32">right</div>
+      <div class="cfb cf42">menu</div>
+      <div class="cfb cf52">footer</div>
+      <!-- <div class="cfb cf62">six</div> -->
+    </div>
+  </body>
+</html>
